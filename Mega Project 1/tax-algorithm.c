@@ -1,4 +1,5 @@
 //Project made by Sumit Kudalkar
+//Follow him on linkedln
 #include <stdio.h>
 
 int main()
@@ -39,7 +40,7 @@ int main()
         printf("the payable tax is : \n %.2f", 0.05 * (600000 - 300000) + 0.10 * (900000 - 600000) + 0.15 * (1200000 - 900000) + 0.20 * (1500000 - 1200000) + 0.30 * (income - 1500000));
     }
     
-    else
+    else if(income < 300000)
     {
         printf("no tax required \n");
     }
