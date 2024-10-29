@@ -3,6 +3,7 @@ def banking_algo():
     #this is a banking algorithm 
     #this is a basic version, all the updates will be patched soon
     #debit,credit
+    #check pull
     balance = 1000
     print("Welcome to the OpenAlgos banking algorithm")
     print("Your model bank balance is 1000 points")
