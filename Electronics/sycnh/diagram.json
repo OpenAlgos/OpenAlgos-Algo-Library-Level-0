@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "author": "10.Kudalkar Sumit",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": -96.6, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -83.2,
+      "left": 154.4,
+      "attrs": {}
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 63.6, "left": 301.4, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": 63.6, "left": 263, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led3", "top": 63.6, "left": 234.2, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led4", "top": 63.6, "left": 205.4, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "ldr1:VCC", "uno:5V", "red", [ "h57.6", "v326.4", "h-316.8" ] ],
+    [ "ldr1:GND", "uno:GND.3", "black", [ "h48", "v345.2", "h-288" ] ],
+    [ "ldr1:AO", "uno:A0", "green", [ "h19.2", "v258.5", "h-230.4" ] ],
+    [ "uno:GND.3", "led4:C", "black", [ "v19.1", "h119.2" ] ],
+    [ "uno:GND.3", "led3:C", "black", [ "v9.5", "h186.4" ] ],
+    [ "uno:GND.3", "led2:C", "black", [ "v19.1", "h196" ] ],
+    [ "uno:GND.3", "led1:C", "black", [ "v9.5", "h234.4" ] ],
+    [ "led4:A", "uno:2", "#8f4814", [ "v-134.4", "h-96" ] ],
+    [ "uno:3", "led3:A", "orange", [ "v-38.4", "h4" ] ],
+    [ "uno:4", "led2:A", "gold", [ "v-67.2", "h32.7" ] ],
+    [ "uno:5", "led1:A", "blue", [ "v-86.4", "h3.8" ] ]
+  ],
+  "dependencies": {}
+}
